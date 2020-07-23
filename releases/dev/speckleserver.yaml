@@ -12,6 +12,6 @@ spec:
     name: speckleserver
     version: 0.1.2
   values:
-    image:
-      repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-      tag: redis
+  #   image:
+  #     repository: rhdhvcontainerregistry.azurecr.io/speckleserver
+  #     tag: redis
