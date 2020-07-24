@@ -1,0 +1,17 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: speckleserver
+  namespace: dev
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: speckleserver
+  chart:
+    git: git@github.com:RoyalHaskoningDHV/speckle-infra
+    path: helm/charts/speckleserver
+    ref: master
+  # values:
+  #   image:
+  #     repository: rhdhvcontainerregistry.azurecr.io/speckleserver
+  #     tag: redis
