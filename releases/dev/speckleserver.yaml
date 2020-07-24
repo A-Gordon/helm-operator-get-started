@@ -8,10 +8,10 @@ metadata:
 spec:
   releaseName: speckleserver
   chart:
-    repository: https://rhdhvcontainerregistry.azurecr.io/helm/v1/repo/
-    name: speckleserver
-    version: 0.1.2
+    git: git@github.com:RoyalHaskoningDHV/speckle-infra
+    path: helm/charts/speckleserver
+    ref: master
   values:
-  #   image:
-  #     repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-  #     tag: redis
+    image:
+      repository: rhdhvcontainerregistry.azurecr.io/speckleserver
+      tag: redis
