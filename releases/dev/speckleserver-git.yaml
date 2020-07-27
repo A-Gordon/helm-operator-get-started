@@ -11,7 +11,8 @@ spec:
     git: git@github.com:RoyalHaskoningDHV/speckle-infra
     path: helm/charts/speckleserver
     ref: master
-  # values:
-  #   image:
-  #     repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-  #     tag: redis
+  values:
+    image:
+      repository: rhdhvcontainerregistry.azurecr.io/speckleserver
+    customer: andy-test
+    
