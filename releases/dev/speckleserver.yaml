@@ -15,4 +15,5 @@ spec:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
       tag: redis
-      imagePullSecrets: rhdhv-acr-login
+    imagePullSecrets: 
+      - name: rhdhv-acr-login
