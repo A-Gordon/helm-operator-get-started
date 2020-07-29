@@ -15,4 +15,5 @@ spec:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
     customer: andy-test
+    imagePullSecrets: rhdhv-acr-login
     
