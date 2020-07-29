@@ -10,7 +10,7 @@ spec:
   chart:
     git: git@github.com:RoyalHaskoningDHV/speckle-infra
     path: helm/charts/speckleserver
-    ref: master
+    ref: DEVOPS-234-implement-ci-cd-for-helm-charts
   values:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
