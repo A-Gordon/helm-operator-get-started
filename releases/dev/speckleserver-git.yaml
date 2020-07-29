@@ -6,7 +6,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "true"
 spec:
-  releaseName: speckleserver
+  releaseName: speckleserver-git
   chart:
     git: git@github.com:RoyalHaskoningDHV/speckle-infra
     path: helm/charts/speckleserver
