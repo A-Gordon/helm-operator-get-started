@@ -1,21 +1,20 @@
----
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: speckleserver
+  name: speckleserver-git-tagging
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
 spec:
-  releaseName: speckleserver
+  releaseName: speckleserver-git-tagging
   chart:
-    repository: https://rhdhvcontainerregistry.azurecr.io/helm/v1/helm/speckleserver/
-    name: speckleserver
-    version: 0.0.15
+    git: git@github.com:RoyalHaskoningDHV/speckle-infra
+    path: helm/charts/speckleserver
+    ref: v1.0.1
   values:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-      tag: redis
-      customer: jellybean
+    customer: gittags
     imagePullSecrets: 
       - name: rhdhv-acr-login
+    
