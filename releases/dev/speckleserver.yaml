@@ -15,7 +15,7 @@ spec:
   values:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-      tag: 0.0.1
+      tag: 0.1.3
       customer: jellybean
     imagePullSecrets:
     - name: rhdhv-acr-login
