@@ -10,7 +10,7 @@ spec:
   releaseName: speckleserver
   chart:
     repository: https://rhdhvcontainerregistry.azurecr.io/helm/v1/repo/
-    name: helm/speckleserver
+    name: speckleserver
     version: 1.0.10
   values:
     image:
