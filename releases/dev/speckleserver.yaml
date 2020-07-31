@@ -9,8 +9,8 @@ metadata:
 spec:
   releaseName: speckleserver
   chart:
-    repository: rhdhvcontainerregistry.azurecr.io/helm/speckleserver:1.0.8
-    name: speckleserver
+    repository: https://rhdhvcontainerregistry.azurecr.io/helm/v1/repo/
+    name: helm/speckleserver
     version: 1.0.8
   values:
     image:
