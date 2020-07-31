@@ -2,12 +2,12 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: speckleserver
+  name: andy-test
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
 spec:
-  releaseName: speckleserver
+  releaseName: andy-test
   chart:
     repository: https://rhdhvcontainerregistry.azurecr.io/helm/v1/repo/
     name: speckleserver
