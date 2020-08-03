@@ -11,11 +11,11 @@ spec:
   chart:
     repository: https://rhdhvcontainerregistry.azurecr.io/helm/v1/repo/
     name: speckleserver
-    version: 1.0.10
+    version: 1.0.11
   values:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-      tag: 1.0.10
+      tag: 1.0.11
       customer: jellybean
     imagePullSecrets:
     - name: rhdhv-acr-login
