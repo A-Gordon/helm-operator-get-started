@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-      tag: 1.0.15
+      tag: 1.0.16
     customer: andy-test
     imagePullSecrets:
     - name: rhdhv-acr-login
