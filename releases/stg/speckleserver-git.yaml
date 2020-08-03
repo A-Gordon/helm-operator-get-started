@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: speckleserver-git
-  namespace: dev
+  namespace: stg
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~1.0
@@ -12,7 +12,7 @@ spec:
   chart:
     git: git@github.com:RoyalHaskoningDHV/speckle-infra
     path: helm/charts/speckleserver
-    ref: DEVOPS-234-implement-ci-cd-for-helm-charts
+    ref: staging
   values:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver

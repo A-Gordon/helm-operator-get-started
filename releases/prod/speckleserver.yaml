@@ -3,19 +3,19 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: andy-test
-  namespace: dev
+  namespace: prod
   annotations:
-    fluxcd.io/automated: "true"
+    fluxcd.io/automated: "false"
 spec:
   releaseName: andy-test
   chart:
     repository: https://rhdhvcontainerregistry.azurecr.io/helm/v1/repo/
     name: speckleserver
-    version: 1.0.11
+    version: 1.0.13
   values:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-      tag: 1.0.12
+      tag: 1.0.13
       customer: jellybean
     imagePullSecrets:
     - name: rhdhv-acr-login
