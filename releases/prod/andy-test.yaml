@@ -1,0 +1,20 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: andy-test
+  namespace: andy-test
+  annotations:
+    fluxcd.io/automated: "false"
+spec:
+  chart:
+    git: git@github.com:RoyalHaskoningDHV/speckle-infra
+    path: helm/charts/speckleserver
+    ref: DEVOPS-234-implement-ci-cd-for-helm-charts
+  values:
+    image:
+      repository: rhdhvcontainerregistry.azurecr.io/speckleserver
+      tag: 1.0.17
+      customer: jellybean
+    imagePullSecrets:
+    - name: rhdhv-acr-login
