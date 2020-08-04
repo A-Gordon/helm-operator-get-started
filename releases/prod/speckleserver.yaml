@@ -7,15 +7,14 @@ metadata:
   annotations:
     fluxcd.io/automated: "false"
 spec:
-  releaseName: andy-test
   chart:
-    repository: https://rhdhvcontainerregistry.azurecr.io/helm/v1/repo/
-    name: speckleserver
-    version: 1.0.13
+    git: git@github.com:RoyalHaskoningDHV/speckle-infra
+    path: helm/charts/speckleserver
+    ref: DEVOPS-234-implement-ci-cd-for-helm-charts
   values:
     image:
       repository: rhdhvcontainerregistry.azurecr.io/speckleserver
-      tag: 1.0.13
+      tag: 1.0.17
       customer: jellybean
     imagePullSecrets:
     - name: rhdhv-acr-login
